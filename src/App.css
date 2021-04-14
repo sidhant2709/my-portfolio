@@ -132,7 +132,11 @@ nav ul li{
 
 /*====================================About ME====================================*/
 .container-fluid {
-  background-color: #343A40;
+  background: linear-gradient(to bottom, rgba(0, 0, 0,0.9), rgba(0, 0, 0, 0.9)),
+  url('./Images/aboutme.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media(max-width:375px) {
   .container-fluid {
@@ -175,6 +179,99 @@ nav ul li{
   }
 }
 
-.services{
+.blogs{
   height: 50vh;
+}
+
+/* ============================experiences============================== */
+.experiences{
+  height: 100vh;
+  border: 0px solid black;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+  url('./Images/experience.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+.experiences h1{
+  text-transform: uppercase;
+  color: #f9ab00;
+}
+.experience-wrapper{
+  position: relative;
+  padding: 3.125rem 0;
+  overflow: hidden;
+}
+.experience-wrapper::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -0.0625rem;
+  width: 0.0125rem;
+  height: 100%;
+  background: grey;
+  z-index: 1;
+}
+
+.timeline-block{
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right{
+  float: right;
+}
+.timeline-block-left{
+  float: left;
+  direction: rtl;
+}
+.marker{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.2125rem solid white;
+  background: darkorange;
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+
+.timeline-content{
+  width: 95%;
+  padding: 0 0.9375rem;
+  color: #343A40;
+  direction: ltr;
+}
+.timeline-content h3{
+  /* max-width: 0.3125rem; */
+  font-weight: 500;
+  color: red;
+  border: 0px solid black;
+}
+
+.timeline-content p{
+  color: white;
+}
+
+@media(max-width:768px){
+  .experiences .container {
+    padding-left: 0;
+  }
+  .experience-wrapper::before{
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+  .timeline-block-right{
+    float: none;
+    width: 100%;
+  }
+  .timeline-block-left{
+    float: none;
+    direction: ltr;
+    width: 100%;
+  }
+
 }

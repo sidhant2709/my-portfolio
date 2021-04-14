@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Services = () => {
+const Blogs = () => {
     return (
-        <div className="services">
+        <div className="blogs">
             <div className="py-5">
                 <div className="container">
                     <div className="row">
@@ -37,4 +37,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Blogs
