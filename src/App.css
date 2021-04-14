@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body{
-  font-family: "Roboto Condesed" sans-serif;
+  font-family: "Roboto Condensed" sans-serif !important;
 }
 :root{
   --primary-white:#fff;
@@ -12,6 +12,9 @@ body{
   padding: 0;
 }
 /* ====================================Navbar==================================== */
+.navbar{
+  height: 10vh;
+}
 .navbar-brand {
   padding: 1.25rem !important;
   max-width: 17.25rem;
@@ -121,9 +124,57 @@ nav ul li{
   z-index: 1;
 }
 
-@media(max-width:768px) {
+/* @media(max-width:768px) {
   .particle-canvas{
-    /* display: none; */
+    
+  }
+} */
+
+/*====================================About ME====================================*/
+.container-fluid {
+  background-color: #343A40;
+}
+@media(max-width:375px) {
+  .container-fluid {
+    background-color: #343A40;
+    height: 100vh;
+  }
+}
+@media(min-width:1024px) {
+  .container-fluid {
+    background-color: #343A40;
+    height: 50vh;
+  }
+}
+.photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.profile-img{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 2px solid #f9ab00;
+}
+
+.about-header{
+  color: #f9ab00;
+  text-transform: uppercase;
+}
+.about-paragraph{
+  text-align: justify;
+  color: white;
+}
+@media(max-width:375px){
+  .profile-img{
+    width: 10rem;
+    height: 10rem;
   }
 }
 
+.services{
+  height: 50vh;
+}
