@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import logo from '../Images/logo.png';
+import logo from '../Images/logo.svg';
 import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
     return (
-       <nav className="navbar navbar-expand-lg navbar-light bg-light">
+       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container">
                 <a className="navbar-brand" href="#">
                     <img src={logo} alt="logo" className="logo"/>
