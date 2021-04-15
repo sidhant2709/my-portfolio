@@ -11,6 +11,10 @@ body{
   margin: 0;
   padding: 0;
 }
+button{
+  background: none;
+  width: 100px;
+}
 /* ====================================Navbar==================================== */
 .navbar{
   height: 10vh;
@@ -58,7 +62,8 @@ nav ul li{
 
 .header-wrapper{
   position: relative;
-  background-image: url(./Images/pexels-hasan-albari-1229861.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('./Images/pexels-hasan-albari-1229861.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -131,21 +136,21 @@ nav ul li{
 } */
 
 /*====================================About ME====================================*/
-.container-fluid {
-  background: linear-gradient(to bottom, rgba(0, 0, 0,0.9), rgba(0, 0, 0, 0.9)),
+.about-me {
+  background: linear-gradient(to bottom, rgba(0, 0, 0,0.9), rgba(0, 0, 0, 0.8)),
   url('./Images/aboutme.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 @media(max-width:375px) {
-  .container-fluid {
+  .about-me {
     background-color: #343A40;
     height: 100vh;
   }
 }
 @media(min-width:1024px) {
-  .container-fluid {
+  .about-me {
     background-color: #343A40;
     height: 50vh;
   }
@@ -274,4 +279,143 @@ nav ul li{
     width: 100%;
   }
 
+}
+
+/* ============================projects============================== */
+
+.portfolio-wrapper{
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+  url('./Images/p1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.heading{
+  color: #f9ab00;
+}
+
+.portfolio-image{
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid #f9ab00;
+  padding: 0 0.5rem;
+
+}
+
+.portfolio-image-box{
+  position: relative;
+  margin: 1rem;
+}
+@media(min-width:1440px) {
+  .portfolio-image {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid #f9ab00;
+    padding: 0 0.5rem;
+  }
+}
+
+
+/* =======================================Overflow Box=================================== */
+
+.overflow{
+  position: absolute;
+  opacity: 0;
+  background: black;
+  width: 15rem;
+  height: 15rem;
+  top: 0;
+  border: 1px solid #f9ab00;
+  cursor: pointer;
+}
+
+@media(min-width:1440px) {
+  .overflow{
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.portfolio-image-box:hover .overflow{
+  opacity: 85%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon{
+  position: absolute;
+  opacity: 0;
+  margin-left: -11rem;
+  margin-top: 8.6rem;
+  color: #f9ab00;
+  font-size: 2.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon{
+  opacity: 80%;
+  transition: 0.3sec ease-in-out;
+  cursor: pointer;
+}
+
+@media(max-width:1440px) {
+  .portfolio-icon {
+    position: absolute;
+    opacity: 0;
+    margin-left: -9rem;
+    margin-top: 6rem;
+    color: #f9ab00;
+    font-size: 2.5rem;
+  }
+}
+/* =======================================POPUP BOX=================================== */
+
+.popupbox-wrapper{
+  width: 40%;
+  background: linear-gradient(to bottom, rgba(71, 70, 70, 0.9), rgba(58, 57, 57, 0.9)),url("./Images/pexels-fauxels-3183150.jpg");
+  color: white;
+}
+.popup-box{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border: 0px solid black;
+  margin: auto;
+}
+.popup-box p,.popup-box h3{
+  color: #f9ab00;
+  font-weight: 600;
+}
+.portfolio-image-popupbox {
+  width: 100%;
+  margin: auto;
+}
+.link-button{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 0px solid black;
+  margin: 10px;
+}
+.github,.demo{
+  color: #f9ab00;
+  font-weight: 700;
+}
+.technology-used{
+  width: 60%;
+  border: 0px solid black;
+  display: flex;
+  justify-content: space-evenly;
+}
+.tech-icon{
+  width: 60px;
+  height: 80px;
 }
