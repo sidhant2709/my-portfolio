@@ -4,9 +4,10 @@ import Particles from "react-particles-js"
 import Navbar from './Components/Navbar';
 import Header from './Components/Header';
 import AboutMe from './Components/AboutMe';
-import Blogs from './Components/Blogs';
+// import Blogs from './Components/Blogs';
 import Experiences from './Components/Experiences';
 import Projects from './Components/Projects';
+import Technology from './Components/Technology';
 
 function App() {
   return (
@@ -35,9 +36,10 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
-      <Blogs />
+      <Technology/>
       <Experiences />
-      <Projects/>
+      <Projects />
+     
     </>
   );
 }
