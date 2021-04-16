@@ -31,7 +31,11 @@ button{
 .logo{
   width: 10.25rem;
 }
-
+@media(max-width:768px) {
+  .navbar{
+    height: auto;
+  }
+}
 /* ====================================Navbar Links==================================== */
 
 nav{
@@ -146,17 +150,30 @@ nav ul li{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: auto;
+  border: 0px solid white;
+  padding-top: 5rem;
 }
-@media(max-width:375px) {
+.about-me-border{
+  border: 0px solid white;
+}
+@media(max-width:768px) {
   .about-me {
     background-color: #343A40;
-    height: 100vh;
+    border: 0px solid white;
+    height: auto;
+    padding-top: 0rem;
+  }
+  .about-paragraph {
+    text-align: justify;
+    color: white;
+    font-size: 14px;
   }
 }
-@media(min-width:1024px) {
+@media(width:1024px) {
   .about-me {
     background-color: #343A40;
-    height: 40vh;
+    height: auto;
   }
 }
 .photo-wrap{
@@ -187,21 +204,27 @@ nav ul li{
     height: 10rem;
   }
 }
-
-.blogs{
-  height: 50vh;
-}
-
 /* ============================experiences============================== */
 .experiences{
-  height: 100vh;
-  border: 0px solid black;
+  height: auto;
+  border: 0px solid white;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
   url('./Images/experience.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 1rem;
+}
+
+@media(max-width:768px){
+  .experiences{
+    border: 0px solid white;
+    height: auto;
+  }
+  .experience-wrapper{
+    padding: 0;
+    border: 0px solid white;
+  }
 }
 .experiences h1{
   text-transform: uppercase;
@@ -288,17 +311,13 @@ nav ul li{
 /* ============================projects============================== */
 
 .portfolio-wrapper{
-  min-height: 100vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
   url('./Images/p1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  padding: 2rem 1rem;
+  height: auto;
 }
 
 .heading{
@@ -433,11 +452,20 @@ nav ul li{
     text-align: center;
     margin-bottom: 0;
     width: 100%;
-    height: 60vh;
     border: 0px solid white;
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 4rem;
+}
+
+@media(max-width:768px) {
+  .technologies{
+    height: auto;
+    border: 0px solid white;
+  }
+  .technologies h1{
+    font-size: 1.5rem;
+  }
 }
 .technologies h1{
   color: #ef4035;
@@ -468,12 +496,16 @@ nav ul li{
   padding-right: 8%;
   height: 12.875rem;
   border: 0px solid white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-
+@media(max-width:768px) {
+  .myCarousel {
+    min-height: 10rem;
+    padding: 0;
+  }
+  .myCarousel h3{
+    font-size: 1rem;
+  }
+}
 .myCarousel h3{
   margin-top: 2rem;
 }
@@ -576,3 +608,41 @@ textarea .form-control {
   }
 } 
 
+/* =======================================Footer=================================== */
+
+.footer{
+  background: var(--primary-black);
+  color: var(--primary-black);
+  padding: 3rem;
+  border: 0px solid white;
+}
+
+.address{
+  border: 0px solid white !important; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.footer a:hover{
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+.footer p{
+  margin-bottom: 0;
+  color: var(--primary-dark-grey);
+}
+.gap{
+  border: 0px solid white;
+  margin-bottom: 20px;
+}
+.link-to{
+  display: flex;
+  flex-direction: column;
+}

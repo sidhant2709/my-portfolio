@@ -3,7 +3,7 @@ import MyImage from "../Images/Sid.jpg"
 const AboutMe = () => {
     return (
         <section className="container-fluid about-me">
-            <div className="container py-5 cont-h">
+            <div className="container py-5 cont-h about-me-border">
                 <div className="row">
                     <div className="col-lg-6 col-xm-12">
                         <div className="photo-wrap mb-5">

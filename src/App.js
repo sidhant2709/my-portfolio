@@ -9,6 +9,7 @@ import Experiences from './Components/Experiences';
 import Projects from './Components/Projects';
 import Technology from './Components/Technology';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
       <Technology/>
       <Experiences />
       <Projects />
-      <Contact/>
+      <Contact />
+      <Footer/>
     </>
   );
 }
