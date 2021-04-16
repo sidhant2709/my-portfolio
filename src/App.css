@@ -1,5 +1,15 @@
-:root{
-  --primary-white:#fff;
+:root {
+  --primary-white: #ffffff;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgb(52, 58, 64);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-black: #000000;
+  --primary-transparent-black: rgba(0, 0, 0, 0.7);
+  --primary-green: green;
 }
 *{
   box-sizing: border-box;
@@ -8,7 +18,6 @@
 }
 button{
   background: none;
-  width: 100px;
 }
 /* ====================================Navbar==================================== */
 .navbar{
@@ -483,3 +492,87 @@ nav ul li{
   margin: auto !important;
   margin-top: 3% !important;
 }
+
+
+/* =======================================Contact=================================== */
+
+.contacts{
+  background: #343A40;
+  padding: 3rem 0;
+}
+.contacts h1{
+  color: #f9ab00;
+  padding: 1.3rem 0;
+}
+.contacts p{
+  color: #f9ab00;
+  font-size: 1.2rem;
+}
+.contacts input,.contacts textarea{
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid #7a7a7a;
+  border-radius: 0;
+  color: #f9ab00;
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container{
+  padding: 4rem 0;
+}
+
+.contacts input:focus,.contacts textarea:focus{
+  background: transparent;
+  color: #f9ab00;
+  border-bottom: 0.125rem solid #7a7a7a;
+}
+
+.contacts textarea{
+  height: 17rem !important;
+}
+
+.contact-btn{
+  margin: 2rem 0 0 0;
+  width: 100%;
+  border-color: #f9ab00;
+}
+.contact-btn:hover{
+  background-color: orange;
+}
+.line{
+  position: relative;
+  width: 0;
+  display: inline-block;
+  height: 0.125rem;
+  background: #f9ab00;
+  top: -2.1rem;
+}
+input:focus+.line,textarea:focus+.line{
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input .form-control{
+  margin: -0.3rem 0;
+}
+textarea .form-control {
+  margin: -0.3rem 0;
+}
+@media(max-width:768px){
+  .contacts{
+    overflow-x: hidden;
+  }
+  .contacts .container{
+    padding: 0 1rem;
+  }
+  .contacts p{
+    padding: 0 0.4rem;
+  }
+} 
+
