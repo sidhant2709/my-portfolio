@@ -10,6 +10,7 @@ import {
     LinkedinShareButton,
     LinkedinIcon
 } from "react-share";
+import { Link } from "react-scroll";
 const Footer = () => {
     return (
         <div className="footer">
@@ -34,18 +35,18 @@ const Footer = () => {
                     <div className="col-lg-3 col-md-2 col-sm-6">
                         <div className="row gap">
                             <div className="col link-to">
-                                <a href="" className="footer-nav">Home</a>
+                                <Link smooth={true} to="home" href="" className="footer-nav">Home</Link>
                                 <br/>
-                                <a href="" className="footer-nav">About</a>
+                                <Link smooth={true} to="about" href="" className="footer-nav">About</Link>
                                 <br/>
-                                <a href="" className="footer-nav">Blogs</a>
+                                <Link smooth={true} to="blogs" href="" className="footer-nav">Blogs</Link>
                             </div>
                              <div className="col link-to">
-                                <a href="" className="footer-nav">Experience</a>
+                                <Link smooth={true} to="experience" href="" className="footer-nav">Experience</Link>
                                 <br/>
-                                <a href="" className="footer-nav">Projects</a>
+                                <Link smooth={true} to="projects" href="" className="footer-nav">Projects</Link>
                                 <br/>
-                                <a href="" className="footer-nav">Contacts</a>
+                                <Link smooth={true} to="contacts" href="" className="footer-nav">Contacts</Link>
                             </div>
                         </div>
                     </div>

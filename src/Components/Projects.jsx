@@ -96,7 +96,7 @@ const Projects = () => {
         PopupboxManager.open({content})
     }
     return (
-        <div className="portfolio-wrapper">
+        <div id="projects" className="portfolio-wrapper">
             <h1 className="text-uppercase text-center heading">Projects</h1>
             <div className="container-fluid box">
                 <div className="image-box-wrapper row justify-content-center">
